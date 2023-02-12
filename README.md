@@ -23,26 +23,29 @@
   We can move to visual mode, by moving to normal mode(pressing ESC) and pressing `v`
 
 - `right arrow` to select a body of text in visual mode
--  `y`(_yanking_) to copy after text selection
--  `p` for pasting and or perhaps `d` for deletion
--  `dd` for deleting all text on a line
--  `r` for replacing a body of text
--  `w` for moving cursor word by word(either based on hyphen/spaces) in forward direction.
-   However, `b` performs the operation in backward direction
--  `W` for moving cursor word by word based solely on spaces
-   However, `B` performs the operation in backward direction
--  `dw` deletes a word
--  `diw` deletes inner word
--  `ciw` change inner word
--  `yiw` yank(copy) inner word
--  `ci"` change inner (word) in quotation mark
--  `%` to jump between parentheses or curly braces
--  `t*` jump one spot before symbol(*)
--  `dt(` delete everything before opening bracket
--  `T*` jump one position after symbol(*)
+- `y`(_yanking_) to copy after text selection
+- `p` for pasting and or perhaps `d` for deletion
+- `dd` for deleting all text on a line
+- `r` for replacing a body of text
+- `w` for moving cursor word by word(either based on hyphen/spaces) in forward direction.
+  However, `b` performs the operation in backward direction
+- `W` for moving cursor word by word based solely on spaces
+  However, `B` performs the operation in backward direction
+- `dw` deletes a word
+- `diw` deletes inner word
+- `ciw` change inner word
+- `yiw` yank(copy) inner word
+- `ci"` change inner (word) in quotation mark
+- `%` to jump between parentheses or curly braces
+- `t*` jump one spot before symbol(\*)
+- `dt(` delete everything before opening bracket
+- `T*` jump one position after symbol(\*)
 - `gg` jump to start of a file
 - `shift-g` jump to end of line
 - `:500` jump to line number 500
 
+## INTERMEDIATE KEYBINDINGS
 
-
+- `/name-of-search-term`. Use n key to go forward to next search term. N to go back to next search term
+- `:%s/character/symbol/g` . This searches the word _character_ and replace it with _symbol_.
+  This is effected globally. that is, every single occurence of characters is replaced with symbol in the file
